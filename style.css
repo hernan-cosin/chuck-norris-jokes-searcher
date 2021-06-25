@@ -101,7 +101,7 @@ body {
 .search-form-container {
   margin: 0 auto;
   max-width: 500px;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 @media (min-width: 769px) {
@@ -129,6 +129,7 @@ body {
   flex-grow: 1;
   font-size: 16px;
   border-radius: 27px;
+  padding-left: 5px;
 }
 
 .search-input:focus {
@@ -150,6 +151,11 @@ body {
   margin: 4px;
   cursor: pointer;
   font-weight: lighter;
+  border: 1px solid white;
+}
+
+.search-button:hover {
+  border: 1px solid rgb(136, 136, 136);
 }
 
 .lucky-button {
@@ -161,6 +167,11 @@ body {
   margin: 4px;
   cursor: pointer;
   font-weight: lighter;
+  border: 1px solid white;
+}
+
+.lucky-button:hover {
+  border: 1px solid rgb(136, 136, 136);
 }
 
 .result-article {
