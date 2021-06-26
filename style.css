@@ -45,7 +45,7 @@ body {
 @media (min-width: 769px) {
   .header {
     max-width: 570px;
-    margin-top: 170px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -194,4 +194,63 @@ body {
 .result-information {
   font-size: 20px;
   color: var(--result-information);
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 0 10px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 4px;
+}
+
+@media (min-width: 769px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 769px 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+.help {
+  font-size: 14px;
+  color: #70757a;
+  text-decoration: none;
+  grid-row: 0/1;
+  padding-top: 5px;
+}
+
+@media (min-width: 769px) {
+  .help {
+    grid-column: 2/3;
+  }
+}
+
+.feedback {
+  font-size: 14px;
+  color: #70757a;
+  text-decoration: none;
+  grid-column: 2/3;
+}
+
+@media (min-width: 769px) {
+  .feedback {
+    grid-column: 2/3;
+  }
+}
+
+.signature {
+  font-size: 14px;
+  color: #70757a;
+  justify-self: end;
+  margin-bottom: 0;
+}
+
+@media (min-width: 769px) {
+  .signature {
+    grid-column: 2/3;
+  }
 }
