@@ -12,11 +12,9 @@ function fetchBySearch(palabra) {
     }
   )
     .then((response) => {
-      // console.log(response);
       return response.json();
     })
     .then((res) => {
-      console.log(res.result);
       cloningTemplateSearch(res.result);
     })
     .catch((err) => {
@@ -37,11 +35,9 @@ function fetchRandom() {
     }
   )
     .then((response) => {
-      // console.log(response);
       return response.json();
     })
     .then((response) => {
-      console.log(response);
       cloningTemplate(response);
     })
     .catch((err) => {
@@ -51,15 +47,12 @@ function fetchRandom() {
 
 function handleSubmit(e) {
   e.preventDefault();
-  // console.log(e.submitter.classList.value);
   clearJokes();
   const palabraClave = this.buscar.value;
   if (e.submitter.classList.value == "search-button") {
     fetchBySearch(palabraClave);
-    console.log("search button");
   } else if (e.submitter.classList.value == "lucky-button") {
     fetchRandom();
-    // console.log("lucky button");
   }
 }
 
